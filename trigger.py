@@ -1,7 +1,7 @@
 from ncclient import manager
 import xmltodict
 
-# Basado en la guía Device Level APIs on Cisco IoT Hardware: NETCONF 
+# Basado en la guía Device Level APIs on Cisco IoT Hardware: NETCONF
 # de Cisco DevNet
 
 m = manager.connect(host="devnetsandboxiosxe.cisco.com",
@@ -35,4 +35,4 @@ def change_interface(user_selection):
 
 # dispara una notificación de cambio
 change_interface(0) #disable
-change_interface(1) #enable 
+change_interface(1) #enable
